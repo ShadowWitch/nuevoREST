@@ -55,6 +55,8 @@ router.post('/usuarios', [verificarToken, verificaAdmin_role], (req, res) => {
     const body = req.body;
     const {nombre, email, password, img, role, estado, google} = body;
 
+    
+
     // console.log(req.usuario)
 
     const usuario = new Usuario({

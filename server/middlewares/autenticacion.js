@@ -42,7 +42,7 @@ const verificaAdmin_role = (req, res, next) => {
             message: 'Este usuario NO es un administrador.'
         })
     }
-
+    
     next(); // Que siga con la ejecucion
 
 };
