@@ -33,7 +33,9 @@ process.env.SEED =  process.env.SEED || 'secretito';
 // ==============================
 // Google Client ID
 // ==============================
-process.env.CLIENT_ID = process.env.CLIENT_ID || ':D';
+process.env.CLIENT_ID = process.env.CLIENT_ID || '262400476400-41djk3vudi46v5gjc60dv9481n422023.apps.googleusercontent.com';
+// 262400476400-41djk3vudi46v5gjc60dv9481n422023.apps.googleusercontent.com
+// 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
 
 
 
