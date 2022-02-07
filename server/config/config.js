@@ -33,11 +33,13 @@ process.env.SEED =  process.env.SEED || 'secretito';
 // ==============================
 // Google Client ID
 // ==============================
-process.env.CLIENT_ID = process.env.CLIENT_ID || 'asd';
-// asd
-// asd
+process.env.CLIENT_ID = process.env.CLIENT_ID || '262400476400-dornbmbpvub9qdjv8ha7q0dahcb4iu5f.apps.googleusercontent.com';
+// 262400476400-41djk3vudi46v5gjc60dv9481n422023.apps.googleusercontent.com
+// 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
 
-
+// Para el HTTPS
+// 262400476400-dornbmbpvub9qdjv8ha7q0dahcb4iu5f.apps.googleusercontent.com
+// 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
 
 
 // ==============================
