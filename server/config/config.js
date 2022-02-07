@@ -20,7 +20,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'dev'; // NODE_ENV es una variabl
 // 60 minutos
 // 24 horas
 // 30 dias
-process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
+process.env.CADUCIDAD_TOKEN = '3 days';
 
 
 // ==============================
@@ -33,9 +33,9 @@ process.env.SEED =  process.env.SEED || 'secretito';
 // ==============================
 // Google Client ID
 // ==============================
-process.env.CLIENT_ID = process.env.CLIENT_ID || '262400476400-41djk3vudi46v5gjc60dv9481n422023.apps.googleusercontent.com';
-// 262400476400-41djk3vudi46v5gjc60dv9481n422023.apps.googleusercontent.com
-// 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
+process.env.CLIENT_ID = process.env.CLIENT_ID || 'asd';
+// asd
+// asd
 
 
 
