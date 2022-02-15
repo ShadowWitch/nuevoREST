@@ -69,7 +69,8 @@ app.put('/upload/:tipo/:id', (req, res) =>{
 
 
     // Mover el archivo a la carpeta que los contendra...
-    archivo.mv(`../uploads/${tipo}/${nombreArchivo}`, (err) => { // En la ubicacion puedo poner "uploads/nombre.jpg" o tambien "./uploads/nombre.jpg"
+    archivo.mv(`uploads/${tipo}/${nombreArchivo}`, (err) => { // En la ubicacion puedo poner "uploads/nombre.jpg" o tambien "./uploads/nombre.jpg"
+        
         if(err){
             return res.status(500).json({
                 ok: false,
@@ -216,7 +217,7 @@ const imagenProducto = (id, res, nombreArchivo, tipo) =>{
 const borraArchivo = (tipo, nombreImg) =>{
     
     // console.log(path.resolve(__dirname, `../../uploads/usuarios/${usuarioGuardado.img}`))
-    console.log(__dirname)
+    // console.log(__dirname)
     const pathImagen = path.resolve(__dirname, `../../uploads/${tipo}/${nombreImg}`);
     // Comprobar si hay una imagen existente con el mismo nombre que tiene el atributo 'img' de un usuario... Esto lo hago con el fin de que si UN USUARIO vuelve a meter o actualizar su 'img', borre la que tenia anteriormente
     
