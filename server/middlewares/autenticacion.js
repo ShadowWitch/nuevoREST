@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 
 // Verificar el token
 const verificarToken = (req, res, next) => {
-
+ 
     const token = req.get('token');
 
     jwt.verify(token, process.env.SEED, (err, decode) =>{ // El "decode" contendra la informacion del usuario (osea basicamente es todo el Payload)
@@ -48,6 +48,22 @@ const verificaAdmin_role = (req, res, next) => {
 };
 
 
+const verificarTokenImg = (req, res, next) =>{
+    const token = req.query.token;
+
+    jwt.verify(token, process.env.SEED, (err, decoded) =>{
+        if(err) return res.status(401).json({
+            ok: false,
+            err: {
+                message: 'Token no valido para Img.'
+            }
+        })
+
+        req.usuario = decoded.usuario;
+        next();
+    })
+    
+}
 
 
 
@@ -55,7 +71,8 @@ const verificaAdmin_role = (req, res, next) => {
 
 module.exports = {
     verificarToken,
-    verificaAdmin_role
+    verificaAdmin_role,
+    verificarTokenImg
 };
 
 // qwe

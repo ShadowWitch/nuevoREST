@@ -65,7 +65,8 @@ router.post('/usuarios', [verificarToken, verificaAdmin_role], (req, res) => {
         password: bcrypt.hashSync(password, 10), // "hashSync" para que haga un 'hash' de forma sincrona (osea que NO use un callback, una promesa si no que lo haga directamente)
         role,
         estado,
-        google
+        google,
+        img
     });
 
     usuario.save( (err, usuarioDB) => { // Guardar en la DB

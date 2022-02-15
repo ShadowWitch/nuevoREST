@@ -1,0 +1,4 @@
+
+
+Luego de hacer la funcionalidad de poder almacenar imagenes, ahora creare una parte en la REST, para que el servidor me devuelva las imagenes desde él, sin hacer publica la carpeta de "uploads". Ya que si la meto en la carpeta de "public", entonces TODAS las personas podran acceder a las imagenes SIN NECESIDAD DE LOGEARSE!!! Y eso NO lo podemos permitir...
+
