@@ -69,7 +69,7 @@ app.put('/upload/:tipo/:id', (req, res) =>{
 
 
     // Mover el archivo a la carpeta que los contendra...
-    archivo.mv(`./uplsoads/${tipo}/${nombreArchivo}`, (err) => { // En la ubicacion puedo poner "uploads/nombre.jpg" o tambien "./uploads/nombre.jpg"
+    archivo.mv(`../uploads/${tipo}/${nombreArchivo}`, (err) => { // En la ubicacion puedo poner "uploads/nombre.jpg" o tambien "./uploads/nombre.jpg"
         if(err){
             return res.status(500).json({
                 ok: false,
