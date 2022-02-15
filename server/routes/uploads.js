@@ -221,6 +221,9 @@ const borraArchivo = (tipo, nombreImg) =>{
     const pathImagen = path.resolve(__dirname, `../../uploads/${tipo}/${nombreImg}`);
     // Comprobar si hay una imagen existente con el mismo nombre que tiene el atributo 'img' de un usuario... Esto lo hago con el fin de que si UN USUARIO vuelve a meter o actualizar su 'img', borre la que tenia anteriormente
     
+    if(!nombreImg){
+        return;
+    }
     if(nombreImg.length > 0){ // Esto lo agregue yo por seguridad...
         if(fs.existsSync(pathImagen)){ // 'fs.existsSync()' recibe como parametro una "ruta", y en caso de que SI exista pues devolver "true", de lo contrario "false"
             fs.unlinkSync(pathImagen) // 'fs.unlinkSync()' recibe una "ruta" como parametro y lo que hace es BORRAR ese archivo que enviamos como ruta.
