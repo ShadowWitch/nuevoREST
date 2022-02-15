@@ -215,7 +215,6 @@ const borraArchivo = (tipo, nombreImg) =>{
     
     // console.log(path.resolve(__dirname, `../../uploads/usuarios/${usuarioGuardado.img}`))
     console.log(__dirname)
-    console.log(path.resolve(__dirname, '../'))
     const pathImagen = path.resolve(__dirname, `../../uploads/${tipo}/${nombreImg}`);
     // Comprobar si hay una imagen existente con el mismo nombre que tiene el atributo 'img' de un usuario... Esto lo hago con el fin de que si UN USUARIO vuelve a meter o actualizar su 'img', borre la que tenia anteriormente
     
