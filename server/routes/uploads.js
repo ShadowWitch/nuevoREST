@@ -73,7 +73,8 @@ app.put('/upload/:tipo/:id', (req, res) =>{
         if(err){
             return res.status(500).json({
                 ok: false,
-                err
+                err,
+                ver: 'Si es aca'
             });
         }
 
